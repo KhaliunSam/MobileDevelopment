@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         }
         val food = addFoodBtn.setOnClickListener { v ->
             foods.add("${addFood.text}")
+            addFood.text.clear()
         }
 
     }
