@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
             var version: String? = version.text.toString()
             var codeName: String? = codeName.text.toString()
 
-            val layout = findViewById<TableLayout>(R.id.table)
             val tableRow = TableRow(getApplicationContext())
             tableRow.setPadding(5, 5, 5, 5)
             tableRow.setBackgroundColor(Color.rgb(233, 30,99))
 
             val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
+            //layoutParams.setMargins(5, 5, 5, 5)
             tableRow.setLayoutParams(layoutParams)
 
             val textVersion = TextView(this)
